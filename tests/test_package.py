@@ -47,7 +47,7 @@ class PackageTests(unittest.TestCase):
             skill=Path(temp)/'ai-news-script'
             shutil.copytree(ROOT/'ai-news-script',skill,ignore=shutil.ignore_patterns('__pycache__'))
             for name in ('README.md','INSTALL.md','USAGE.md','CHANGELOG.md','NOTICE.md','LICENSE'):
-                (skill/name).write_text('Public project documentation\n',encoding='utf-8')
+                (skill/name).write_bytes(b'Public project documentation\n')
             archive=pkg.build(skill,Path(temp)/'skill.zip')
             with ZipFile(archive) as z:
                 self.assertEqual(z.read('ai-news-script/LICENSE'),b'Public project documentation\n')
