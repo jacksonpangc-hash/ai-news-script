@@ -58,7 +58,7 @@ def vendor_files(root):
 def build(skill,outfile):
     skill=Path(skill);outfile=Path(outfile);check_skill(skill)
     entries=[];vendored=vendor_files(skill)
-    for f in sorted(skill.rglob('*')):
+    for f in sorted(skill.rglob('*'),key=lambda p:p.relative_to(skill).as_posix()):
         if f.is_symlink():raise ValueError('Do not distribute symlinks')
         if not f.is_file():continue
         rel=f.relative_to(skill)
@@ -75,7 +75,7 @@ def build(skill,outfile):
     outfile.parent.mkdir(parents=True,exist_ok=True)
     with ZipFile(outfile,'w',compression=ZIP_DEFLATED) as z:
         for name,data in entries:
-            info=ZipInfo(name,date_time=(2026,10,25,0,0,0));info.compress_type=ZIP_DEFLATED
+            info=ZipInfo(name,date_time=(2026,10,25,0,0,0));info.create_system=3;info.compress_type=ZIP_DEFLATED
             info.external_attr=0o100644<<16;z.writestr(info,data)
     return outfile
 
