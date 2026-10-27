@@ -1,0 +1,143 @@
+{
+  "upstream": "https://github.com/Nanako0129/sepia",
+  "commit": "fb06be76abeae7dd606960a32f2b10c1d1798e0d",
+  "version": "0.12.4",
+  "retrieved_date": "2026-10-26",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Nanako Tsai",
+  "modifications": "None. Canonical skills/sepia subtree and root LICENSE copied verbatim; integration is separate.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "upstream_path": "LICENSE",
+      "git_blob_sha": "8168a989db907a10605f36aff7a70b6f45c75a0c",
+      "sha256": "7d3d6cf8de8f5ffe1b161b86c35e7286cfacf7f55d17b2a5c52efdad21a79df3"
+    },
+    {
+      "path": "SKILL.md",
+      "upstream_path": "skills/sepia/SKILL.md",
+      "git_blob_sha": "db9c993e36f0e13d8046354f6df4e2b9e46897f5",
+      "sha256": "90f3ce8f1f83cb342a8605ad4815473920b5c2ee692f7215459f901669aa0947"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "upstream_path": "skills/sepia/agents/openai.yaml",
+      "git_blob_sha": "213c243ad03067dd272ceec4b006a14946c73ed1",
+      "sha256": "00e5dc7886eb61913387db3120e63ba6da80c314ceadb4957ed945eef07f66dd"
+    },
+    {
+      "path": "references/discourse-pass.md",
+      "upstream_path": "skills/sepia/references/discourse-pass.md",
+      "git_blob_sha": "2e8dc265b59c857daa814f9cd0229018855899ae",
+      "sha256": "1bab61c095ea55bfe3951ff6df84cd2b64d1ff87e22af662f6c658702ab16cd2"
+    },
+    {
+      "path": "references/domains/dev-replies.md",
+      "upstream_path": "skills/sepia/references/domains/dev-replies.md",
+      "git_blob_sha": "39c02084f89eaeda47118c08df2e2a060614e267",
+      "sha256": "a0fc73ee75f65d7d588ee1480f11a1407dd2550e310f52ae95bce9dfd3913194"
+    },
+    {
+      "path": "references/domains/journalism.md",
+      "upstream_path": "skills/sepia/references/domains/journalism.md",
+      "git_blob_sha": "1523b60fd0b3a0fd13c0e8999ed6244bdc9226db",
+      "sha256": "74d6b4820fe84f270713a15689a24f486a387911935fb2f394abb221c5f6447a"
+    },
+    {
+      "path": "references/domains/postmortems.md",
+      "upstream_path": "skills/sepia/references/domains/postmortems.md",
+      "git_blob_sha": "a2f5d64ea2ac8c187d130d9027b4338738709b93",
+      "sha256": "04471baf7209dd3a3085d0b2a9a3c1ba7e7f33899fd81e0e96f79d8f434425f3"
+    },
+    {
+      "path": "references/domains/release-notes.md",
+      "upstream_path": "skills/sepia/references/domains/release-notes.md",
+      "git_blob_sha": "bf605e635c7ec8f4a850a8e9b186a86abd45205b",
+      "sha256": "8b2e98b81681341cf8c98359bb89f108206a51eed813e353a642b021e0f8556f"
+    },
+    {
+      "path": "references/domains/tech-articles.md",
+      "upstream_path": "skills/sepia/references/domains/tech-articles.md",
+      "git_blob_sha": "69d059453c98bfa3844677da044030aeaf6e9e18",
+      "sha256": "81f055467c11093ddb3d3595ce9fba775f8226795163fbc3c43c498ac4a2b925"
+    },
+    {
+      "path": "references/domains/tickets.md",
+      "upstream_path": "skills/sepia/references/domains/tickets.md",
+      "git_blob_sha": "371a0153fff6aef4b61663851fba53f325d412fc",
+      "sha256": "ea62da367c7139de7e962ea00d2a974645e40b1f953a4c06464b4c5ab1364f52"
+    },
+    {
+      "path": "references/languages/zh.md",
+      "upstream_path": "skills/sepia/references/languages/zh.md",
+      "git_blob_sha": "1f83e0d63b8988136b25ebc9ab4a0f192c3317c0",
+      "sha256": "e36e63aacabe85b42cf97deac7b6fedd25a186539787a88f6132dd29b690ab43"
+    },
+    {
+      "path": "references/model-fingerprints.md",
+      "upstream_path": "skills/sepia/references/model-fingerprints.md",
+      "git_blob_sha": "15b09ea715b4531b734eaa821a67786ec910a1e1",
+      "sha256": "e5583e1069fc1269102c8e163fe633add9e4201276293d881d3abc0334fa5ee9"
+    },
+    {
+      "path": "references/narrative-pass.md",
+      "upstream_path": "skills/sepia/references/narrative-pass.md",
+      "git_blob_sha": "56e0b8532abae07be20b8be0d939fb9871f1ac70",
+      "sha256": "79055a67fef653a6edf48294a88ed5c557c01a73f5ebab9b6bc4eaec1bbe6448"
+    },
+    {
+      "path": "references/professional-pass.md",
+      "upstream_path": "skills/sepia/references/professional-pass.md",
+      "git_blob_sha": "a1b055a9fae26a99fbdb09205c3c612fea03b264",
+      "sha256": "56ec4a89d476b27090698d7bf8a295ec2ad32d9ba2194ca0d2cc657ed3504949"
+    },
+    {
+      "path": "references/rubric.md",
+      "upstream_path": "skills/sepia/references/rubric.md",
+      "git_blob_sha": "ea2d9d69aef19490c5cbbd22ac0eb4475a3caa02",
+      "sha256": "d7b62363f6ae7d8eff18593526415ff295a441f4d71f5dce5b0417022765b41d"
+    },
+    {
+      "path": "references/style-pass.md",
+      "upstream_path": "skills/sepia/references/style-pass.md",
+      "git_blob_sha": "467f1a01525e6ed8e390ee0486eaae2acc27f7ef",
+      "sha256": "6a129bd629bebdda069865876737a8d0acf85b5bba9213c5466dff974b7724dd"
+    },
+    {
+      "path": "references/voice-skills.md",
+      "upstream_path": "skills/sepia/references/voice-skills.md",
+      "git_blob_sha": "9acea24b456f607a1585e8fdf9664317deec6d9b",
+      "sha256": "82d1b8117fbbf94f0273b5c5a250424d0a99d0014aafa27e4572885e8f8337ba"
+    },
+    {
+      "path": "references/voices/PERSONA-TEMPLATE.md",
+      "upstream_path": "skills/sepia/references/voices/PERSONA-TEMPLATE.md",
+      "git_blob_sha": "ef84f2db95cdc449b2459b94277f27cfdbcbaa59",
+      "sha256": "8625e160c4cc9586e06d6960c5815623333fb03a6e67dd6a44979aa4ad00f1db"
+    },
+    {
+      "path": "references/voices/hemingway.md",
+      "upstream_path": "skills/sepia/references/voices/hemingway.md",
+      "git_blob_sha": "8e7b0c89a625816d589273497513a67d404e515f",
+      "sha256": "f2c3a8371735ff5aee6e888397f22851652c7b4b0e2de1ffbf45faa79bbda2cd"
+    },
+    {
+      "path": "references/voices/personas/nyaneko.md",
+      "upstream_path": "skills/sepia/references/voices/personas/nyaneko.md",
+      "git_blob_sha": "d0677b444fd8d1eba081662a2cd6ecef3c3f9240",
+      "sha256": "b739ad7cb2cacba303069ca2e7a9052dc295f113c8696104301c1c047f57a106"
+    },
+    {
+      "path": "references/voices/registry.md",
+      "upstream_path": "skills/sepia/references/voices/registry.md",
+      "git_blob_sha": "1b0078723b646a103e19793650c17519d9f6d39f",
+      "sha256": "d91f44a2e9c3665804ae265aa7094918947473ea5e6daffa60fc118c366aff16"
+    },
+    {
+      "path": "references/voices/tw-journalism.md",
+      "upstream_path": "skills/sepia/references/voices/tw-journalism.md",
+      "git_blob_sha": "4fa052a1dfbbe946a4b96ae5a681c501e2532291",
+      "sha256": "dc3b3a240f616a37d915dce30d1feaa6b206259a18eb71df07a41ef0d684bc79"
+    }
+  ]
+}

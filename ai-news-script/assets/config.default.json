@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.1",
+  "language": "zh-CN",
+  "audience": "mainland_sme_owners",
+  "lookback_days": 7,
+  "max_lookback_days": 30,
+  "timezone": null,
+  "duration_seconds": [
+    60,
+    180
+  ],
+  "target_characters": [
+    240,
+    720
+  ],
+  "reference_characters_per_minute": [
+    220,
+    280
+  ],
+  "max_search_calls": 8,
+  "max_open_calls": 12,
+  "max_retries_per_source": 2,
+  "max_pool_stories": 20,
+  "max_candidates": 4,
+  "max_selected_stories": 1,
+  "max_rewrite_passes": 2,
+  "min_editorial_score": 60,
+  "allow_evergreen_fallback": false,
+  "retain_raw_pages": false,
+  "save_history": true,
+  "new_paid_providers": false,
+  "strict_window": false,
+  "topic_scope": "practical_cases",
+  "style_profile_id": "practical_explainer_v11",
+  "feed_stale_hours": 48,
+  "feed_lead_limit": 40,
+  "builder_feed_urls": [
+    "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
+    "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json",
+    "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json"
+  ],
+  "default_case_focus": [
+    "enterprise_efficiency",
+    "business_operations"
+  ],
+  "task_execution_policy": "required_v1",
+  "duration_policy": "material_first_not_a_quota",
+  "region_policy": "mainland_first_v1",
+  "region_scope": "mainland_preferred",
+  "builder_feed_policy": "supplementary_v1",
+  "default_non_mainland_fallback": false,
+  "sepia_policy": "embedded_review_v1",
+  "editorial_policy": "ai_business_value_v16"
+}

@@ -1,0 +1,30 @@
+name: Validate Skill
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test records, state and editorial contracts
+        run: python -B -m unittest discover -s ai-news-script/tests -v
+      - name: Test distribution boundary
+        run: python -B -m unittest discover -s tests -p test_package.py -v
+      - name: Rebuild clean Skill archive
+        run: python -B tools/package_skill.py
+      - name: Verify frozen release
+        run: python -c "import hashlib; from pathlib import Path; assert hashlib.sha256(Path('dist/ai-news-script-v1.6.0.zip').read_bytes()).hexdigest() == '56c144a831d7edaae9555cba52f3e50d9856ca1a387aa297fe6ffe84e2eb322d'"

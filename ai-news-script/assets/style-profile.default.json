@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1",
+  "style_profile_id": "practical_explainer_v11",
+  "revision": "1.6.0",
+  "status": "provisional_pending_user_style_confirmation",
+  "language": "zh-CN",
+  "identity_imitation": false,
+  "speaking_rate": null,
+  "prosody": null,
+  "default_audience": "mainland_sme_owners",
+  "default_region": "china_mainland_preferred",
+  "guide_reference": "references/style-guide.md",
+  "sepia_reference": "references/sepia-integration.md",
+  "reference_reading": {
+    "original_source_url": "https://github.com/youmoyunzhi/awesome-ai-persona-skills-zhengliu/blob/main/zimeiti/qiuzhi2046-skill/SKILL.md",
+    "role": "third_party_method_reference_not_news_evidence",
+    "interpretation": "independent_paraphrase",
+    "per_run_requirement": "读内置Sepia适用文体参考与本指南，第三方外部原文按需回读并如实记录",
+    "development_full_read": {
+      "read_date": "2026-10-27",
+      "timezone": "Asia/Shanghai",
+      "reader": "parent_research_thread",
+      "method": "GitHub connected full-text read",
+      "source_modified_date": "2026-05-03T16:13:50Z",
+      "record_basis": "parent research receipt; not executor or every writing run claiming a fresh read",
+      "use": "independent method paraphrase only"
+    }
+  },
+  "user_sample": {
+    "availability": "independent_summary_only",
+    "source": "user_approved_business_ai_explainer",
+    "transferable": [
+      "现实问题与主判断",
+      "熟悉对象和具体动作",
+      "业务条件与人动机的有据因果",
+      "先做什么及怎样判断",
+      "自然收拢决策"
+    ],
+    "excluded": [
+      "第一人称经历移植",
+      "虚构员工原话与心理",
+      "老板牵头或全SOP作为普遍必要条件",
+      "固定三步企业模板"
+    ]
+  },
+  "actions": [
+    {
+      "action_id": "audience_problem",
+      "action": "先读近期事实，找到AI实际接手的企业工作，再形成老板关心的问题或有据结果"
+    },
+    {
+      "action_id": "one_judgment",
+      "action": "一个有事实支撑的AI应用价值判断，主体持续解释"
+    },
+    {
+      "action_id": "causal_explanation",
+      "action": "具体输入→AI处理→可用产物→业务使用，区分产出、效率、业务信号和最终结果"
+    },
+    {
+      "action_id": "spoken_register",
+      "action": "中文交流感，保留有作用的你/好/比如与自然回扣"
+    },
+    {
+      "action_id": "targeted_edit",
+      "action": "Sepia具体review再定向改，总2轮"
+    },
+    {
+      "action_id": "evidence_fidelity",
+      "action": "事实推断未知分开，不加亲测或效果"
+    }
+  ],
+  "durable_user_preferences": [],
+  "user_feedback_status": "sample_approved_final_generated_style_pending",
+  "coverage": {
+    "complete_creator_works_in_package": 0,
+    "limitation": "无真人全文、音频、原图、用户原稿或私有案例；统计不是本产品质量证明"
+  },
+  "samples": [],
+  "banned_behaviors": [
+    "虚构亲测",
+    "植入创作者身份",
+    "无依据时间或收益保证",
+    "把第三方归纳当真人完整风格事实",
+    "为文风新增事实",
+    "AI退为背景而主体讲普通营销或购买建议",
+    "把先后关系写成因果证明",
+    "把普通脚本或定时自动化全部归功AI"
+  ],
+  "selection_connection": "复用value_brief/editorial_bridge核对AI的具体分工、产物如何被业务使用及价值依据；品牌可删，AI行动不能被普通管理建议替代。"
+}

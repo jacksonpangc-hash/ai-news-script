@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI 资讯口播"
+  short_description: "为大陆中小企业老板查近期AI应用，讲清具体工作与价值，内置Sepia写成通俗口播"
+  default_prompt: "使用 $ai-news-script，查近期AI新闻和真实企业应用，为面向中国大陆中小企业老板的AI博主写一篇通俗、逻辑清楚、口语化的抖音口播，讲清AI具体接手哪项工作及有据价值。"
+policy:
+  allow_implicit_invocation: true
