@@ -7,3 +7,5 @@
 发行包为完整Skill，含源文件、参考、MIT许可、内置Sepia及虚构程序测试。原始用户稿、新闻全文、开发档案和真实运行未公开。程序检查与小样本文字审核不保证稳定出稿或实际爆款。
 
 SHA256：56c144a831d7edaae9555cba52f3e50d9856ca1a387aa297fe6ffe84e2eb322d。
+
+发行环境勘误：Windows 执行辅助程序前需安装 IANA 时区数据（`python -m pip install tzdata`）。仓库打包工具已将路径统一为 ZIP 标准斜杠；发行 Skill 的62文件和ZIP字节保持不变。

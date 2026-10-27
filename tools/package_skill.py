@@ -49,7 +49,7 @@ def vendor_files(root):
         if hashlib.sha256(b).hexdigest()!=item['sha256']:raise ValueError('Vendor hash mismatch: '+str(rel))
         if hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()!=item['git_blob_sha']:
             raise ValueError('Vendor blob mismatch: '+str(rel))
-        allowed.add(str(rel))
+        allowed.add(rel.as_posix())
     if not {'LICENSE','SKILL.md','references/professional-pass.md','references/languages/zh.md'}.issubset(allowed):
         raise ValueError('Incomplete embedded Sepia')
     return {'vendor/sepia/'+name for name in allowed}
@@ -63,7 +63,7 @@ def build(skill,outfile):
         if not f.is_file():continue
         rel=f.relative_to(skill)
         if '__pycache__' in rel.parts or f.name=='.DS_Store':continue
-        allowed=(str(rel) in ROOT_FILES or str(rel) in vendored or
+        allowed=(rel.as_posix() in ROOT_FILES or rel.as_posix() in vendored or
                  (rel.parts[0] in DIRS and f.suffix in DIRS[rel.parts[0]]))
         if not allowed:raise ValueError('Unexpected file in Skill: '+str(rel))
         if f.name in ('preferences.json','event_history.json','config.local.json','run.json','sources.json','script.md'):
@@ -71,7 +71,7 @@ def build(skill,outfile):
         data=f.read_bytes()
         if SECRET.search(data.decode('utf-8')):raise ValueError('Possible credential in '+str(rel))
         if PERSONAL_PATH.search(data.decode('utf-8')):raise ValueError('Possible personal machine path in '+str(rel))
-        entries.append((str(Path(skill.name)/rel),data))
+        entries.append(((Path(skill.name)/rel).as_posix(),data))
     outfile.parent.mkdir(parents=True,exist_ok=True)
     with ZipFile(outfile,'w',compression=ZIP_DEFLATED) as z:
         for name,data in entries:
